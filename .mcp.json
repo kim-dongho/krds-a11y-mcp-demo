@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "krds-a11y": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "krds-a11y-mcp"
+      ]
+    }
+  }
+}

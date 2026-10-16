@@ -1,0 +1,39 @@
+/* 사이트 자체 배치 — 자기 구획의 배치·여백만 다룬다(킷 셀렉터는 덮어쓰지 않는다). 값은 킷 토큰 */
+
+/* SCR-01 검색 영역: 입력 필드 가로 배치, 조회 버튼은 아래 줄 오른쪽 */
+.seat-search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--krds-gap-7);
+}
+.seat-search-field {
+  flex: 1 1 28rem;
+  min-width: 0;
+}
+.seat-search-action {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* SCR-02 이용 수칙 요약 */
+.rule-summary {
+  margin-bottom: var(--krds-gap-5);
+}
+
+/* 내 예약 · 이용 안내 본문 구획 간격 */
+.page-section + .page-section {
+  margin-top: var(--krds-pc-gap-layout-h2-h3);
+}
+.page-section > h2 {
+  margin-bottom: var(--krds-pc-gap-layout-title-body-medium);
+}
+@media (max-width: 767px) {
+  .page-section + .page-section {
+    margin-top: var(--krds-mobile-gap-layout-h2-h3);
+  }
+  .page-section > h2 {
+    margin-bottom: var(--krds-mobile-gap-layout-title-body-medium);
+  }
+}

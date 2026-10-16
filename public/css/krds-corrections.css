@@ -1,0 +1,468 @@
+/* krds-a11y 처방 교정 CSS — get_icon_fix_css(assetBase: /krds-uiux) 전체본 + 패턴 템플릿 교정분.
+   킷 CSS 다음에 로드한다. 킷이 경로 버그를 고치면 아이콘 부분은 지워도 된다. */
+
+/* ==== 킷 아이콘 경로 버그(img/img 중복) 전면 교정 ==== */
+.krds-help-panel .help-panel-wrap .conts-area .help-title > a::before, .krds-help-panel .help-panel-wrap .conts-area .help-title > button::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-accordion .accordion-item .btn-accordion::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-file-upload .file-list .upload-list .file-info .ico-invalid.error {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_error_fill.svg);
+}
+.krds-file-upload .file-list .upload-list .file-info .ico-invalid.complete {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_complete_fill.svg);
+}
+.krds-file-upload .file-list .upload-list .file-hint-invalid::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_error_fill.svg);
+}
+.krds-disclosure .btn-conts-expand::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_expand.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_expand.svg);
+}
+#krds-masthead .toggle-head .nuri-txt::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_flag.svg);
+}
+#krds-header .header-container .logo a {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds.svg);
+}
+#krds-header .header-container .btn-navi.sch::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_sch.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_sch.svg);
+}
+#krds-header .header-container .btn-navi.login::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_login.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_login.svg);
+}
+#krds-header .header-container .btn-navi.join::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_join.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_join.svg);
+}
+#krds-header .header-container .btn-navi.my::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_my.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_my.svg);
+}
+#krds-header .header-container .btn-navi.all::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_all.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_all.svg);
+}
+[data-krds-mode=high-contrast] #krds-header .header-container .logo a {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds_high_contrast.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] #krds-header .header-container .logo a {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds_high_contrast.svg);
+}
+}
+.krds-main-menu .gnb-menu .gnb-main-trigger::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-main-menu .gnb-toggle-wrap .gnb-main-list .gnb-sub-trigger::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-main-menu .gnb-toggle-wrap .gnb-main-list .gnb-sub-trigger.is-link::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_more.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_more.svg);
+}
+.krds-main-menu .gnb-toggle-wrap .gnb-main-list .gnb-sub-trigger.is-link.external-link::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_go.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_go.svg);
+}
+.krds-main-menu-mobile .gnb-wrap .gnb-body .gnb-menu .submenu-wrap .gnb-sub-list .gnb-sub-trigger.has-depth3::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-main-menu-mobile .gnb-wrap .gnb-body .gnb-menu .submenu-wrap .gnb-sub-list .depth3-wrap .depth3-trigger.has-depth4::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+#krds-footer .foot-quick .inner .link::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_plus.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_plus.svg);
+}
+#krds-footer .f-logo {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds.svg);
+}
+[data-krds-mode=high-contrast] #krds-footer .f-logo {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds_high_contrast.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] #krds-footer .f-logo {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds_high_contrast.svg);
+}
+}
+.krds-identifier .logo {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds.svg);
+}
+[data-krds-mode=high-contrast] .krds-identifier .logo {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds_high_contrast.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-identifier .logo {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_logo_krds_high_contrast.svg);
+}
+}
+.krds-side-navigation .lnb-list .lnb-item [class*=lnb-toggle]::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-side-navigation .lnb-list .lnb-item .lnb-submenu-lv2 .lnb-btn-tit::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-structured-list .card-body .c-text .c-tit::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-critical-alerts .critical-badge.danger::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_urgent_badge_danger.svg);
+}
+.krds-critical-alerts .critical-badge.ok::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_urgent_badge_ok.svg);
+}
+.krds-critical-alerts .critical-badge.info::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_urgent_badge_info.svg);
+}
+.swiper-button-more::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_plus.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_plus.svg);
+}
+.swiper-button-play::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_swiper_play.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_swiper_play.svg);
+}
+.swiper-button-stop::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_swiper_stop.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_swiper_stop.svg);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-pagination .page-navi.prev::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-pagination .page-navi.next::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-pagination .page-links .page-link.link-dot {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_ellipsis.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_ellipsis.svg);
+}
+.krds-breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-breadcrumb-wrap .breadcrumb .home .txt::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_bread_home.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_bread_home.svg);
+}
+@media (max-width: 767px) {
+.krds-breadcrumb-wrap .breadcrumb li:not(.home):not(:nth-child(2)):last-child::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_ellipsis.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_ellipsis.svg);
+}
+}
+@media (max-width: 767px) {
+.krds-breadcrumb-wrap .breadcrumb li:not(.home):not(:nth-child(2)):last-child::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+}
+.krds-step-wrap > li.done > span::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_step_done.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_step_done.svg);
+}
+.krds-tag-wrap.small .krds-btn-tag .btn-delete {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_delete_fill.svg);
+}
+.krds-tag-wrap.medium .krds-btn-tag .btn-delete {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_delete_fill.svg);
+}
+.krds-tag-wrap.large .krds-btn-tag .btn-delete {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_delete_fill.svg);
+}
+.krds-tag-wrap .krds-btn-tag .btn-delete {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_delete_fill.svg);
+}
+.form-group [class^=form-hint]::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_information.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_information.svg);
+}
+.form-group .form-hint-success::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_success_fill.svg);
+}
+.form-group .form-hint-information::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_information_fill.svg);
+}
+.form-group .form-hint-invalid::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_error_fill.svg);
+}
+[data-krds-mode=high-contrast] .form-group [class^=form-hint]::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_information.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_information.svg);
+}
+[data-krds-mode=high-contrast] .form-group .form-hint-success::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_success_fill.svg);
+}
+[data-krds-mode=high-contrast] .form-group .form-hint-information::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_information_fill.svg);
+}
+[data-krds-mode=high-contrast] .form-group .form-hint-invalid::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_error_fill.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .form-group [class^=form-hint]::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_information.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_information.svg);
+}
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .form-group .form-hint-success::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_success_fill.svg);
+}
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .form-group .form-hint-information::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_information_fill.svg);
+}
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .form-group .form-hint-invalid::before {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_error_fill.svg);
+}
+}
+.krds-form-select {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-form-select[disabled] {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_disabled.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-select {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_inverse.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-select[disabled] {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_disabled_inverse.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-select {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_inverse.svg);
+}
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-select[disabled] {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_disabled_inverse.svg);
+}
+}
+.krds-form-select-sort {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-select-sort {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_inverse.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-select-sort {
+  -webkit-mask-image: none;
+  mask-image: none;
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_inverse.svg);
+}
+}
+.krds-form-check.medium > input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+.krds-form-check.large > input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+.krds-form-check input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-check.medium > input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-check.large > input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-check input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-check.medium > input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-check.large > input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-check input[type=checkbox] ~ label:after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+}
+.krds-form-chip.small input[type=radio] ~ label:before,
+.krds-form-chip.small input[type=checkbox] ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+}
+.krds-form-chip.medium input[type=radio] ~ label:before,
+.krds-form-chip.medium input[type=checkbox] ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+}
+.krds-form-chip.large input[type=radio] ~ label:before,
+.krds-form-chip.large input[type=checkbox] ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+}
+.krds-form-chip input[type=radio] ~ label:before,
+.krds-form-chip input[type=checkbox] ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+}
+.krds-form-chip input[type=radio]:checked ~ label:before,
+.krds-form-chip input[type=checkbox]:checked ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox_checked.svg);
+}
+[data-krds-mode=high-contrast] .krds-form-chip input[type=radio] ~ label:before,
+[data-krds-mode=high-contrast] .krds-form-chip input[type=checkbox] ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-form-chip input[type=radio] ~ label:before,
+  [data-krds-mode=theme] .krds-form-chip input[type=checkbox] ~ label:before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_checkbox.svg);
+}
+}
+.krds-form-toggle-switch [type=checkbox] ~ label .switch-toggle > i::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_switch_off.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_switch_off.svg);
+}
+.krds-form-toggle-switch [type=checkbox]:checked ~ label .switch-toggle > i::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_switch_on.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_switch_on.svg);
+}
+.krds-calendar-area .calendar-wrap .calendar-head .btn-cal-move::before {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_angle.svg);
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch::after {
+  -webkit-mask-image: url(/krds-uiux/resources/img/component/icon/ico_arrow_dropdown.svg);
+  mask-image: url(/krds-uiux/resources/img/component/icon/ico_arrow_dropdown.svg);
+}
+.krds-drop-wrap.krds-resize .drop-list .item-link::before {
+  background: url(/krds-uiux/resources/img/component/icon/head_ico_font_sample.svg);
+}
+.krds-drop-wrap.krds-resize .drop-list .item-link.active::before {
+  background-image: url(/krds-uiux/resources/img/component/icon/head_ico_font_sample_white.svg);
+}
+[data-krds-mode=high-contrast] .krds-drop-wrap.krds-resize .item-link::before {
+  background: url(/krds-uiux/resources/img/component/icon/head_ico_font_sample_white.svg);
+}
+@media (prefers-color-scheme: dark) {
+[data-krds-mode=theme] .krds-drop-wrap.krds-resize .item-link::before {
+  background: url(/krds-uiux/resources/img/component/icon/head_ico_font_sample_white.svg);
+}
+}
+/* 킷 결함 교정: 셀렉트 기본 글자색 대비 3.08:1 → text-subtle 8.68:1 (5.4.3) */
+.krds-form-select { color: var(--krds-light-color-text-subtle); }
+
+/* ==== 패턴 템플릿(apply-form) 교정분 ==== */
+/* 제목 위계 교정(h3→h2)의 스타일 승계 — 원본 발췌 CSS가 태그 한정 셀렉터(h3.sec-tit)라
+   교정된 h2.sec-tit에 같은 스타일을 재선언 */
+.conts-wrap .conts-wrap h2.sec-tit {
+  margin-bottom: var(--krds-pc-gap-layout-title-body-large);
+  font-size: var(--krds-pc-font-size-heading-large);
+}
+.conts-wrap .conts-wrap h2.sec-tit ~ .conts-wrap { margin-top: var(--krds-pc-gap-layout-h2-h3); }
+.conts-area.step-type h2.sec-tit { margin-bottom: var(--krds-gap-9); }
+@media (max-width: 767px) {
+  .conts-wrap .conts-wrap h2.sec-tit {
+    margin-bottom: var(--krds-mobile-gap-layout-title-body-large);
+    font-size: var(--krds-mobile-font-size-heading-medium);
+  }
+  .conts-wrap .conts-wrap h2.sec-tit ~ .conts-wrap { margin-top: var(--krds-mobile-gap-layout-h3-h4); }
+}
+.krds-form-select:disabled, .krds-form-select[readonly] {
+  background-image: url(/krds-uiux/resources/img/component/icon/ico_angle_disabled.svg);
+}
+
+/* ==== breadcrumb 폭 정렬 승계 (output.css:20848) — 원본 #container 키 규칙 ==== */
+#main-content > .krds-breadcrumb-wrap { padding-bottom: 0; }
+#main-content > .krds-breadcrumb-wrap .breadcrumb { max-width: var(--krds-contents-wrap-size); padding: 0 var(--krds-contents-padding-x); }
